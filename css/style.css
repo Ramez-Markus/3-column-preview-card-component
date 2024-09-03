@@ -1,0 +1,85 @@
+.cards{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+margin-top: 50px;
+margin-bottom: 20px;
+
+}
+.cards .card{
+    min-width: 250px;
+    max-width: 250px;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.cards .card:first-child{
+    background-color:#e28525 ;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.cards .card:nth-child(2){
+    background-color:#016972 ;
+}
+.cards .card:last-child{
+    background-color:#00403f ;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+@media (max-width:767px) {
+    .cards .card:first-child{
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 0px;
+        border-top-right-radius: 10px;
+    }
+    .cards .card:last-child{
+        border-top-right-radius: 0px;
+        border-bottom-left-radius:10px;
+        border-bottom-right-radius: 10px;
+    }
+    
+}
+.cards .card img ,.cards .card h2,.cards .card p ,.cards .card button{
+    margin-left: 30px;
+}
+.cards .card img{
+    margin-top: 30px;
+    width: 50px;
+}
+.cards .card h2{
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 30px;
+    color: white;
+}
+.cards .card p{
+    width: 150px;
+    margin-right:30px ;
+   font-size: small;
+   color: rgb(255 255 255/60%);
+}
+.cards .card button{
+    border-radius: 25px;
+    border: 2px white solid;
+    background-color: white;
+    cursor: pointer;
+    color: transparent;
+    width: 50%;
+    margin-top: 30px;
+    height: 40px;
+}
+.cards .card:first-child button{
+    color: #e28525;
+}
+.cards .card:nth-child(2) button{
+    color: #016972;
+}
+.cards .card:last-child button{
+    color: #00403f;
+}
+.cards .card button:hover{
+background-color: transparent;
+color: white;
+}
